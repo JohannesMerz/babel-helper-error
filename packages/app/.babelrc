@@ -19,12 +19,20 @@
       }
     ]
   ],
-  "plugins": [],
+  "plugins": [    
+    "external-helpers"
+  ],
+  "ignore": [
+    
+  ],
   "env": {
     "test": {
       "presets": [
         ["env", { "modules": "commonjs" }]
-      ]
+      ],
+      "plugins": [    
+        "external-helpers"
+      ],
     }
   }
 }

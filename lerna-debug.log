@@ -18,24 +18,39 @@
 12 error FAIL src/index.spec.js
 12 error   ● Test suite failed to run
 12 error
-12 error     ReferenceError: babelHelpers is not defined
+12 error     Jest encountered an unexpected token
 12 error
-12 error       1 | (function (global, factory) {
-12 error     > 2 | 	typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
-12 error         | 	^
-12 error       3 | 	typeof define === 'function' && define.amd ? define(factory) :
-12 error       4 | 	(factory());
-12 error       5 | }(this, (function () { 'use strict';
+12 error     This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
 12 error
-12 error       at ../es6-package/dist/index.js:2:2
-12 error       at Object.<anonymous> (../es6-package/dist/index.js:1:2)
+12 error     By default, if Jest sees a Babel config, it will use that to transform your files, ignoring "node_modules".
+12 error
+12 error     Here's what you can do:
+12 error      • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+12 error      • If you need a custom transformation specify a "transform" option in your config.
+12 error      • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+12 error
+12 error     You'll find more details and examples of these config options in the docs:
+12 error     https://facebook.github.io/jest/docs/en/configuration.html
+12 error
+12 error     Details:
+12 error
+12 error     /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/src/index.js:11
+12 error     export default hans;
+12 error     ^^^^^^
+12 error
+12 error     SyntaxError: Unexpected token export
+12 error
+12 error     > 1 | import hans from 'es6-package'
+12 error         | ^
+12 error       2 |
+12 error
+12 error       at ScriptTransformer._transformAndBuildScript (node_modules/jest-runtime/build/script_transformer.js:402:17)
 12 error       at Object.<anonymous> (src/index.js:1:1)
-12 error       at Object.<anonymous> (src/index.spec.js:1:1)
 12 error
 12 error Test Suites: 1 failed, 1 total
 12 error Tests:       0 total
 12 error Snapshots:   0 total
-12 error Time:        0.828s
+12 error Time:        1.297s
 12 error Ran all test suites.
 12 error npm ERR! code ELIFECYCLE
 12 error npm ERR! errno 1
@@ -46,7 +61,7 @@
 12 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 12 error
 12 error npm ERR! A complete log of this run can be found in:
-12 error npm ERR!     /Users/johannesmerz/.npm/_logs/2018-06-13T15_41_31_632Z-debug.log
+12 error npm ERR!     /Users/johannesmerz/.npm/_logs/2018-06-13T15_58_22_996Z-debug.log
 12 error
 12 error > app@1.0.0 test /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app
 12 error > jest

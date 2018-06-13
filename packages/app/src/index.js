@@ -1,1 +1,1 @@
-import 'es6-package'
+import hans from 'es6-package'
