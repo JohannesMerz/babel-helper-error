@@ -1,84 +1,56 @@
-0 silly input []
-1 silly flags { _: [ 'bootstrap' ],
+0 silly input [ 'test' ]
+1 silly flags { _: [ 'run' ],
 1 silly flags   'reject-cycles': false,
 1 silly flags   rejectCycles: false,
+1 silly flags   script: 'test',
 1 silly flags   args: [] }
 2 verbose rootPath /Users/johannesmerz/Documents/workspace/so/babel-helpers
 3 info version 2.11.0
 4 silly existsSync /Users/johannesmerz/Documents/workspace/so/babel-helpers/VERSION
 5 silly initialize attempt
-6 silly npmConfig { registry: undefined,
-6 silly npmConfig   npmClient: undefined,
-6 silly npmConfig   npmClientArgs: undefined,
-6 silly npmConfig   mutex: undefined }
-7 silly initialize success
-8 silly execute attempt
-9 info Bootstrapping 2 packages
-10 info lifecycle preinstall
-11 silly runScript preinstall es6-package
-12 silly es6-package
-13 silly runScript preinstall app
-14 silly app
-15 silly hasMatchingDependency app es6-package
-16 silly hasDependencyInstalled es6-package babel-plugin-external-helpers
-17 silly dependencyIsSatisfied [ 'babel-plugin-external-helpers',
-17 silly dependencyIsSatisfied   '^6.22.0',
-17 silly dependencyIsSatisfied   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/node_modules' ]
-18 verbose dependencyIsSatisfied babel-plugin-external-helpers true
-19 silly hasDependencyInstalled es6-package rollup
-20 silly dependencyIsSatisfied [ 'rollup',
-20 silly dependencyIsSatisfied   '^0.60.4',
-20 silly dependencyIsSatisfied   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/node_modules' ]
-21 verbose dependencyIsSatisfied rollup true
-22 silly hasDependencyInstalled es6-package rollup-plugin-babel
-23 silly dependencyIsSatisfied [ 'rollup-plugin-babel',
-23 silly dependencyIsSatisfied   '^3.0.4',
-23 silly dependencyIsSatisfied   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/node_modules' ]
-24 verbose dependencyIsSatisfied rollup-plugin-babel true
-25 silly root dependencies []
-26 silly leaf dependencies {
-26 silly leaf dependencies   "es6-package": [
-26 silly leaf dependencies     {
-26 silly leaf dependencies       "dependency": "babel-plugin-external-helpers@^6.22.0",
-26 silly leaf dependencies       "isSatisfied": true
-26 silly leaf dependencies     },
-26 silly leaf dependencies     {
-26 silly leaf dependencies       "dependency": "rollup@^0.60.4",
-26 silly leaf dependencies       "isSatisfied": true
-26 silly leaf dependencies     },
-26 silly leaf dependencies     {
-26 silly leaf dependencies       "dependency": "rollup-plugin-babel@^3.0.4",
-26 silly leaf dependencies       "isSatisfied": true
-26 silly leaf dependencies     }
-26 silly leaf dependencies   ]
-26 silly leaf dependencies }
-27 info Symlinking packages and binaries
-28 silly existsSync /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/package.json
-29 silly hasMatchingDependency app es6-package
-30 silly existsSync /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package
-31 silly isSymlink /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package
-32 verbose isSymlink [ '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package',
-32 verbose isSymlink   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package' ]
-33 silly mkdirp /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules
-34 silly symlink [ '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package',
-34 silly symlink   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package',
-34 silly symlink   'junction' ]
-35 silly createSymbolicLink [ '../../es6-package',
-35 silly createSymbolicLink   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package',
-35 silly createSymbolicLink   'junction' ]
-36 silly packageActions finished app
-37 silly packageActions finished es6-package
-38 info lifecycle postinstall
-39 silly runScript postinstall es6-package
-40 silly es6-package
-41 silly runScript postinstall app
-42 silly app
-43 info lifecycle prepublish
-44 silly runScript prepublish es6-package
-45 silly runScriptInDir prepublish [] es6-package
-46 silly getExecOpts { cwd: '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package' }
-47 silly es6-package
-48 error execute Error occured with 'es6-package' while running 'npm run prepublish'
-49 error npm run prepublish [es6-package] Output from stdout:
-50 error npm run prepublish [es6-package] Output from stderr:
-51 error execute Error occured with 'es6-package' while running 'npm run prepublish'
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir test [] app
+9 silly getExecOpts { cwd: '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app' }
+10 error test Errored while running script in 'app'
+11 error execute callback with error
+12 error Error: Command failed: npm run test
+12 error FAIL src/index.spec.js
+12 error   ● Test suite failed to run
+12 error
+12 error     ReferenceError: babelHelpers is not defined
+12 error
+12 error       1 | (function (global, factory) {
+12 error     > 2 | 	typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+12 error         | 	^
+12 error       3 | 	typeof define === 'function' && define.amd ? define(factory) :
+12 error       4 | 	(factory());
+12 error       5 | }(this, (function () { 'use strict';
+12 error
+12 error       at ../es6-package/dist/index.js:2:2
+12 error       at Object.<anonymous> (../es6-package/dist/index.js:1:2)
+12 error       at Object.<anonymous> (src/index.js:1:1)
+12 error       at Object.<anonymous> (src/index.spec.js:1:1)
+12 error
+12 error Test Suites: 1 failed, 1 total
+12 error Tests:       0 total
+12 error Snapshots:   0 total
+12 error Time:        0.84s
+12 error Ran all test suites.
+12 error npm ERR! code ELIFECYCLE
+12 error npm ERR! errno 1
+12 error npm ERR! app@1.0.0 test: `jest`
+12 error npm ERR! Exit status 1
+12 error npm ERR!
+12 error npm ERR! Failed at the app@1.0.0 test script.
+12 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+12 error
+12 error npm ERR! A complete log of this run can be found in:
+12 error npm ERR!     /Users/johannesmerz/.npm/_logs/2018-06-13T15_09_52_479Z-debug.log
+12 error
+12 error > app@1.0.0 test /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app
+12 error > jest
+12 error
+12 error
+12 error     at Promise.all.then.arr (/Users/johannesmerz/.config/yarn/global/node_modules/lerna/node_modules/execa/index.js:236:11)
+12 error     at <anonymous>
