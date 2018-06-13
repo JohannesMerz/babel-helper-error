@@ -1,0 +1,84 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /Users/johannesmerz/Documents/workspace/so/babel-helpers
+3 info version 2.11.0
+4 silly existsSync /Users/johannesmerz/Documents/workspace/so/babel-helpers/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: undefined,
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: undefined }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 2 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall es6-package
+12 silly es6-package
+13 silly runScript preinstall app
+14 silly app
+15 silly hasMatchingDependency app es6-package
+16 silly hasDependencyInstalled es6-package babel-plugin-external-helpers
+17 silly dependencyIsSatisfied [ 'babel-plugin-external-helpers',
+17 silly dependencyIsSatisfied   '^6.22.0',
+17 silly dependencyIsSatisfied   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/node_modules' ]
+18 verbose dependencyIsSatisfied babel-plugin-external-helpers true
+19 silly hasDependencyInstalled es6-package rollup
+20 silly dependencyIsSatisfied [ 'rollup',
+20 silly dependencyIsSatisfied   '^0.60.4',
+20 silly dependencyIsSatisfied   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/node_modules' ]
+21 verbose dependencyIsSatisfied rollup true
+22 silly hasDependencyInstalled es6-package rollup-plugin-babel
+23 silly dependencyIsSatisfied [ 'rollup-plugin-babel',
+23 silly dependencyIsSatisfied   '^3.0.4',
+23 silly dependencyIsSatisfied   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/node_modules' ]
+24 verbose dependencyIsSatisfied rollup-plugin-babel true
+25 silly root dependencies []
+26 silly leaf dependencies {
+26 silly leaf dependencies   "es6-package": [
+26 silly leaf dependencies     {
+26 silly leaf dependencies       "dependency": "babel-plugin-external-helpers@^6.22.0",
+26 silly leaf dependencies       "isSatisfied": true
+26 silly leaf dependencies     },
+26 silly leaf dependencies     {
+26 silly leaf dependencies       "dependency": "rollup@^0.60.4",
+26 silly leaf dependencies       "isSatisfied": true
+26 silly leaf dependencies     },
+26 silly leaf dependencies     {
+26 silly leaf dependencies       "dependency": "rollup-plugin-babel@^3.0.4",
+26 silly leaf dependencies       "isSatisfied": true
+26 silly leaf dependencies     }
+26 silly leaf dependencies   ]
+26 silly leaf dependencies }
+27 info Symlinking packages and binaries
+28 silly existsSync /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package/package.json
+29 silly hasMatchingDependency app es6-package
+30 silly existsSync /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package
+31 silly isSymlink /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package
+32 verbose isSymlink [ '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package',
+32 verbose isSymlink   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package' ]
+33 silly mkdirp /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules
+34 silly symlink [ '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package',
+34 silly symlink   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package',
+34 silly symlink   'junction' ]
+35 silly createSymbolicLink [ '../../es6-package',
+35 silly createSymbolicLink   '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app/node_modules/es6-package',
+35 silly createSymbolicLink   'junction' ]
+36 silly packageActions finished app
+37 silly packageActions finished es6-package
+38 info lifecycle postinstall
+39 silly runScript postinstall es6-package
+40 silly es6-package
+41 silly runScript postinstall app
+42 silly app
+43 info lifecycle prepublish
+44 silly runScript prepublish es6-package
+45 silly runScriptInDir prepublish [] es6-package
+46 silly getExecOpts { cwd: '/Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/es6-package' }
+47 silly es6-package
+48 error execute Error occured with 'es6-package' while running 'npm run prepublish'
+49 error npm run prepublish [es6-package] Output from stdout:
+50 error npm run prepublish [es6-package] Output from stderr:
+51 error execute Error occured with 'es6-package' while running 'npm run prepublish'

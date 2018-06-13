@@ -1,0 +1,22 @@
+{
+  "name": "es6-package",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "rollup": "^0.60.4",
+    "rollup-plugin-babel": "^3.0.4"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.es6.js",
+  "jsnext:main": "dist/index.es6.js"
+}
