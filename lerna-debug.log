@@ -35,7 +35,7 @@
 12 error Test Suites: 1 failed, 1 total
 12 error Tests:       0 total
 12 error Snapshots:   0 total
-12 error Time:        0.782s
+12 error Time:        0.828s
 12 error Ran all test suites.
 12 error npm ERR! code ELIFECYCLE
 12 error npm ERR! errno 1
@@ -46,7 +46,7 @@
 12 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 12 error
 12 error npm ERR! A complete log of this run can be found in:
-12 error npm ERR!     /Users/johannesmerz/.npm/_logs/2018-06-13T15_36_37_297Z-debug.log
+12 error npm ERR!     /Users/johannesmerz/.npm/_logs/2018-06-13T15_41_31_632Z-debug.log
 12 error
 12 error > app@1.0.0 test /Users/johannesmerz/Documents/workspace/so/babel-helpers/packages/app
 12 error > jest
