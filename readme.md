@@ -22,7 +22,8 @@ to "fix" it (not really suitable):
 
 ```
 lerna bootstrap
-cp -r packages/es6-package packages/app/es6-package
+rm packages/app/node_modules/es6-package
+cp -r packages/es6-package packages/app/node_modules/es6-package
 # now that the package is no longer linked it finds all the correct stuff
 lerna run test
 ```
